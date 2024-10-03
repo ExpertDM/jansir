@@ -1,0 +1,132 @@
+[debug] [2024-10-03T20:39:58.101Z] ----------------------------------------------------------------------
+[debug] [2024-10-03T20:39:58.106Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\BANGLA COMPUTER\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-10-03T20:39:58.107Z] CLI Version:   13.20.2
+[debug] [2024-10-03T20:39:58.107Z] Platform:      win32
+[debug] [2024-10-03T20:39:58.107Z] Node Version:  v21.7.3
+[debug] [2024-10-03T20:39:58.107Z] Time:          Fri Oct 04 2024 02:39:58 GMT+0600 (Bangladesh Standard Time)
+[debug] [2024-10-03T20:39:58.108Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-10-03T20:39:58.205Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-10-03T20:39:58.206Z] > authorizing via signed-in user (jansirxmail@gmail.com)
+[debug] [2024-10-03T20:39:58.206Z] [iam] checking project noxwriter for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-10-03T20:39:58.210Z] Checked if tokens are valid: true, expires at: 1727990650659
+[debug] [2024-10-03T20:39:58.210Z] Checked if tokens are valid: true, expires at: 1727990650659
+[debug] [2024-10-03T20:39:58.212Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/noxwriter:testIamPermissions [none]
+[debug] [2024-10-03T20:39:58.212Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/noxwriter:testIamPermissions x-goog-quota-user=projects/noxwriter
+[debug] [2024-10-03T20:39:58.213Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/noxwriter:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-10-03T20:40:00.078Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/noxwriter:testIamPermissions 200
+[debug] [2024-10-03T20:40:00.079Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/noxwriter:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-10-03T20:40:00.079Z] Checked if tokens are valid: true, expires at: 1727990650659
+[debug] [2024-10-03T20:40:00.079Z] Checked if tokens are valid: true, expires at: 1727990650659
+[debug] [2024-10-03T20:40:00.080Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/noxwriter [none]
+[debug] [2024-10-03T20:40:00.848Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/noxwriter 200
+[debug] [2024-10-03T20:40:00.849Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/noxwriter {"projectId":"noxwriter","projectNumber":"545416574462","displayName":"Nox Writer","name":"projects/noxwriter","resources":{"hostingSite":"noxwriter","storageBucket":"noxwriter.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_622f0ae5-067f-41fe-86fb-fdbadc93b4ef"}
+[debug] [2024-10-03T20:40:05.525Z] Checked if tokens are valid: true, expires at: 1727990650659
+[debug] [2024-10-03T20:40:05.525Z] Checked if tokens are valid: true, expires at: 1727990650659
+[debug] [2024-10-03T20:40:05.526Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/noxwriter/sites pageToken=&pageSize=10
+[debug] [2024-10-03T20:40:06.990Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/noxwriter/sites 200
+[debug] [2024-10-03T20:40:06.990Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/noxwriter/sites {"sites":[{"name":"projects/noxwriter/sites/noxwriter","defaultUrl":"https://noxwriter.web.app","appId":"1:545416574462:web:25f15f976df74665a47caf","type":"DEFAULT_SITE"}]}
+[debug] [2024-10-03T20:40:06.990Z] Checked if tokens are valid: true, expires at: 1727990650659
+[debug] [2024-10-03T20:40:06.991Z] Checked if tokens are valid: true, expires at: 1727990650659
+[debug] [2024-10-03T20:40:06.991Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:545416574462:web:25f15f976df74665a47caf/config [none]
+[debug] [2024-10-03T20:40:08.860Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:545416574462:web:25f15f976df74665a47caf/config 200
+[debug] [2024-10-03T20:40:08.861Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:545416574462:web:25f15f976df74665a47caf/config {"projectId":"noxwriter","appId":"1:545416574462:web:25f15f976df74665a47caf","storageBucket":"noxwriter.appspot.com","locationId":"us-central","apiKey":"AIzaSyCDsr32wkc05VBgN9s7bbJKJ9zCgFrwF6I","authDomain":"noxwriter.firebaseapp.com","messagingSenderId":"545416574462","measurementId":"G-MD2VNFPTCK"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2024-10-03T20:40:19.004Z] Checked if tokens are valid: true, expires at: 1727990650659
+[debug] [2024-10-03T20:40:19.005Z] Checked if tokens are valid: true, expires at: 1727990650659
+[debug] [2024-10-03T20:40:19.005Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/noxwriter/sites/noxwriter [none]
+[debug] [2024-10-03T20:40:20.304Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/noxwriter/sites/noxwriter 200
+[debug] [2024-10-03T20:40:20.304Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/noxwriter/sites/noxwriter {"name":"projects/noxwriter/sites/noxwriter","defaultUrl":"https://noxwriter.web.app","appId":"1:545416574462:web:25f15f976df74665a47caf","type":"DEFAULT_SITE"}
+[info]  ⚠ Invalid next.config.mjs options detected: 
+
+[info]  ⚠     Unrecognized key(s) in object: 'output' at "experimental"
+ ⚠     Unrecognized key(s) in object: 'revalidate'
+ ⚠ See more info here: https://nextjs.org/docs/messages/invalid-next-config
+
+[info]    ▲ Next.js 14.0.0
+
+[info] 
+   Creating an optimized production build ...
+
+[info] uncaughtException [Error: EPERM: operation not permitted, open 'C:\Users\BANGLA COMPUTER\Desktop\blog-website-nextjs-master\.next\trace'] {
+  errno: -4048,
+  code: 'EPERM',
+  syscall: 'open',
+  path: 'C:\\Users\\BANGLA COMPUTER\\Desktop\\blog-website-nextjs-master\\.next\\trace'
+}
+
+[debug] [2024-10-03T20:40:29.825Z] Error: ENOENT: no such file or directory, open 'C:\Users\BANGLA COMPUTER\Desktop\blog-website-nextjs-master\.next\server\middleware-manifest.json'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-10-03T20:44:37.680Z] ----------------------------------------------------------------------
+[debug] [2024-10-03T20:44:37.684Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\BANGLA COMPUTER\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-10-03T20:44:37.685Z] CLI Version:   13.20.2
+[debug] [2024-10-03T20:44:37.685Z] Platform:      win32
+[debug] [2024-10-03T20:44:37.685Z] Node Version:  v21.7.3
+[debug] [2024-10-03T20:44:37.686Z] Time:          Fri Oct 04 2024 02:44:37 GMT+0600 (Bangladesh Standard Time)
+[debug] [2024-10-03T20:44:37.686Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-10-03T20:44:37.798Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-10-03T20:44:37.799Z] > authorizing via signed-in user (jansirxmail@gmail.com)
+[debug] [2024-10-03T20:44:37.799Z] [iam] checking project noxwriter for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-10-03T20:44:37.801Z] Checked if tokens are valid: true, expires at: 1727990650659
+[debug] [2024-10-03T20:44:37.802Z] Checked if tokens are valid: true, expires at: 1727990650659
+[debug] [2024-10-03T20:44:37.804Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/noxwriter:testIamPermissions [none]
+[debug] [2024-10-03T20:44:37.804Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/noxwriter:testIamPermissions x-goog-quota-user=projects/noxwriter
+[debug] [2024-10-03T20:44:37.805Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/noxwriter:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-10-03T20:44:39.569Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/noxwriter:testIamPermissions 200
+[debug] [2024-10-03T20:44:39.569Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/noxwriter:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-10-03T20:44:39.570Z] Checked if tokens are valid: true, expires at: 1727990650659
+[debug] [2024-10-03T20:44:39.570Z] Checked if tokens are valid: true, expires at: 1727990650659
+[debug] [2024-10-03T20:44:39.570Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/noxwriter [none]
+[debug] [2024-10-03T20:44:40.474Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/noxwriter 200
+[debug] [2024-10-03T20:44:40.474Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/noxwriter {"projectId":"noxwriter","projectNumber":"545416574462","displayName":"Nox Writer","name":"projects/noxwriter","resources":{"hostingSite":"noxwriter","storageBucket":"noxwriter.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_622f0ae5-067f-41fe-86fb-fdbadc93b4ef"}
+[debug] [2024-10-03T20:44:45.623Z] Checked if tokens are valid: true, expires at: 1727990650659
+[debug] [2024-10-03T20:44:45.623Z] Checked if tokens are valid: true, expires at: 1727990650659
+[debug] [2024-10-03T20:44:45.624Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/noxwriter/sites pageToken=&pageSize=10
+[debug] [2024-10-03T20:44:46.981Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/noxwriter/sites 200
+[debug] [2024-10-03T20:44:46.981Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/noxwriter/sites {"sites":[{"name":"projects/noxwriter/sites/noxwriter","defaultUrl":"https://noxwriter.web.app","appId":"1:545416574462:web:25f15f976df74665a47caf","type":"DEFAULT_SITE"}]}
+[debug] [2024-10-03T20:44:46.982Z] Checked if tokens are valid: true, expires at: 1727990650659
+[debug] [2024-10-03T20:44:46.982Z] Checked if tokens are valid: true, expires at: 1727990650659
+[debug] [2024-10-03T20:44:46.982Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:545416574462:web:25f15f976df74665a47caf/config [none]
+[debug] [2024-10-03T20:44:48.646Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:545416574462:web:25f15f976df74665a47caf/config 200
+[debug] [2024-10-03T20:44:48.646Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:545416574462:web:25f15f976df74665a47caf/config {"projectId":"noxwriter","appId":"1:545416574462:web:25f15f976df74665a47caf","storageBucket":"noxwriter.appspot.com","locationId":"us-central","apiKey":"AIzaSyCDsr32wkc05VBgN9s7bbJKJ9zCgFrwF6I","authDomain":"noxwriter.firebaseapp.com","messagingSenderId":"545416574462","measurementId":"G-MD2VNFPTCK"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2024-10-03T20:44:58.869Z] Checked if tokens are valid: true, expires at: 1727990650659
+[debug] [2024-10-03T20:44:58.870Z] Checked if tokens are valid: true, expires at: 1727990650659
+[debug] [2024-10-03T20:44:58.870Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/noxwriter/sites/noxwriter [none]
+[debug] [2024-10-03T20:45:00.221Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/noxwriter/sites/noxwriter 200
+[debug] [2024-10-03T20:45:00.221Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/noxwriter/sites/noxwriter {"name":"projects/noxwriter/sites/noxwriter","defaultUrl":"https://noxwriter.web.app","appId":"1:545416574462:web:25f15f976df74665a47caf","type":"DEFAULT_SITE"}
+[info]    ▲ Next.js 14.0.0
+
+[info] 
+   Creating an optimized production build ...
+
+[info] uncaughtException [Error: EPERM: operation not permitted, open 'C:\Users\BANGLA COMPUTER\Desktop\blog-website-nextjs-master\.next\trace'] {
+  errno: -4048,
+  code: 'EPERM',
+  syscall: 'open',
+  path: 'C:\\Users\\BANGLA COMPUTER\\Desktop\\blog-website-nextjs-master\\.next\\trace'
+}
+
+[debug] [2024-10-03T20:45:07.994Z] Error: ENOENT: no such file or directory, open 'C:\Users\BANGLA COMPUTER\Desktop\blog-website-nextjs-master\.next\server\middleware-manifest.json'
+[error] 
+[error] Error: An unexpected error has occurred.
